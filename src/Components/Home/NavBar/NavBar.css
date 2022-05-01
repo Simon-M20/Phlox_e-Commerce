@@ -1,0 +1,113 @@
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2f6;
+    transition: all 0.2s ease-in 0.3s;
+
+    opacity: 0;
+    transform: translateY(-100%) scale(0);
+}
+
+.menu.is-active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.menuList {
+    display: block;
+}
+
+.menu > ul > li {
+    text-align: center;
+    margin: 3.5rem 0;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+    color: #777;
+}
+
+.menu > ul > li:hover {
+    color: #222;
+}
+
+.menuClose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    border: 1px solid #777;
+}
+
+.menuClose:hover {
+    border: 1px solid #333;
+}
+
+.loginBtn,
+.navIcons {
+    transition: all 0.2s ease-in;
+    color: #777;
+}
+
+.loginBtn:hover,
+.loginBtn:focus,
+.navIcons:hover,
+.navIcons:focus {
+    color: #222;
+}
+
+.navIcons {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+    .menuList,
+    .menuClose {
+        display: none !important;
+    }
+
+    .menu {
+        position: relative;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        flex-direction: row;
+        z-index: 999;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        transition: all 0.2s ease-in;
+
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu > ul > li {
+        margin: 0 20px;
+        color: #777;
+        text-align: left;
+        font-size: 18px;
+        transition: all 0.2s ease-in;
+    }
+
+    .menu > ul > li:hover,
+    .menu > ul > li:focus {
+        font-weight: 600;
+        color: #222;
+    }
+}

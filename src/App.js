@@ -1,9 +1,10 @@
 import "./App.css";
+import Home from "./Components/Pages/Home";
 
 function App() {
     return (
-        <div className='text-4xl'>
-            <h1>Hello world</h1>
+        <div>
+            <Home />
         </div>
     );
 }

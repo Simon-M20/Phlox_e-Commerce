@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(34, 34, 34, 0.85);
+    scroll-behavior: smooth;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #333;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #555;
+    border-radius: 20px;
+}
+
+body {
+    color: #333;
+    font-weight: 400;
+}
