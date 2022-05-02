@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;700&display=swap");
+
+.heroSection {
+    background-color: transparent;
+    background-image: linear-gradient(105deg, #dcdcdc 54%, #eee 68%);
+    padding: 16% 0 7% 9%;
+    border-radius: 25px;
+}
+
+.title {
+    color: #f8f8f8;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 11.4vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -2.9px;
+    line-height: 60px;
+}
+
+.erTitle,
+.sanTitle {
+    font-family: "Poppins";
+}
+
+.heroBtn {
+    position: relative;
+    background-color: #f42c37;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    transition: all 0.32s ease-in;
+    border-radius: inherit;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.heroBtn:hover .overlay {
+    transform: scale(1);
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        margin: 0 0 0 -11px;
+        line-height: 150px;
+    }
+
+    .heroBtn {
+        padding: 13px 32px;
+        font-size: 15px;
+    }
+}
