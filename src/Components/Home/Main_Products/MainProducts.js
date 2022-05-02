@@ -81,7 +81,7 @@ const MainProducts = () => {
                                 alt='Play Station 4'
                             />
                         </div>
-                        <figcaption className='pt-12 pl-14'>
+                        <figcaption className='pt-12 md:pl-14 pl-8'>
                             <h6>Best</h6>
                             <h3 className='text-black font-bold text-3xl'>
                                 Gaming
