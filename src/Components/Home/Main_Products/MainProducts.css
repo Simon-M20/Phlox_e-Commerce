@@ -10,7 +10,10 @@
     padding-top: 20px;
 }
 
-.laptopSection {
+.laptopSection,
+.playSection,
+.gameSection,
+.speakerSection {
     width: 100%;
     height: 100%;
     padding-top: 20px;
@@ -192,6 +195,28 @@
     color: #fff;
 }
 
+.playCard {
+    border-radius: 25px;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #edeced 0%, #eef0f3 100%);
+    height: 344px;
+    color: #333;
+    transition: all 0.3s ease-in;
+
+    width: 100%;
+}
+
+.playTitle {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    letter-spacing: -1.3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
     .earBtn,
     .watchBtn,
@@ -209,13 +234,16 @@
     }
 
     .earSection,
-    .wacthSection {
+    .wacthSection,
+    .gameSection,
+    .speakerSection {
         width: 50%;
         height: 100%;
         padding-top: 0;
     }
 
-    .laptopSection {
+    .laptopSection,
+    .playSection {
         width: 100%;
         height: 100%;
         padding-top: 20px;
@@ -235,5 +263,17 @@
         height: 100%;
         padding-left: 8px;
         padding-top: 0;
+    }
+
+    .playSection {
+        width: 50%;
+        height: 100%;
+        padding-right: 8px;
+    }
+
+    .gameSection .speakerSection {
+        width: 25%;
+        height: 100%;
+        padding-left: 8px;
     }
 }

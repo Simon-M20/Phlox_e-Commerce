@@ -1,6 +1,7 @@
 import Earphones from "../../../Assets/Main_Products/Earphones.png";
 import YellowWatch from "../../../Assets/Main_Products/Yellow-watch.png";
 import LaptopImg from "../../../Assets/Main_Products/Laptop.png";
+import PlayStation from "../../../Assets/Main_Products/PS4.png";
 
 import "./MainProducts.css";
 
@@ -17,7 +18,7 @@ const MainProducts = () => {
                                 alt='Earphones'
                             />
                         </div>
-                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-28 md:pl-6 pl-8'>
+                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-28 md:pl-8 pl-10'>
                             <h6 className='tracking-tighter'>Enjoy</h6>
                             <h3 className='text-3xl font-bold tracking-tight'>
                                 With
@@ -36,7 +37,7 @@ const MainProducts = () => {
                         <div className='absolute -right-24 z-10'>
                             <img src={YellowWatch} alt='Yellow Watch' />
                         </div>
-                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-28 md:pl-6 pl-8'>
+                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-28 md:pl-8 pl-10'>
                             <h6 className='tracking-tighter'>Enjoy</h6>
                             <h3 className='text-3xl font-bold tracking-tight'>
                                 Wear
@@ -68,6 +69,33 @@ const MainProducts = () => {
                         </figcaption>
                     </figure>
                 </section>
+            </section>
+
+            <section className='flex flex-wrap items-start justify-center w-full'>
+                <section className='playSection'>
+                    <figure className='playCard relative overflow-hidden'>
+                        <div className='absolute xl:-top-4 xl:-right-24 md:-right-4 right-6 md:-top-32 top-4 scale-75'>
+                            <img
+                                className='relative md:-right-44 -right-28 xl:-top-28 md:top-12 top-14 scale-75'
+                                src={PlayStation}
+                                alt='Play Station 4'
+                            />
+                        </div>
+                        <figcaption className='pt-12 pl-14'>
+                            <h6>Best</h6>
+                            <h3 className='text-black font-bold text-3xl'>
+                                Gaming
+                            </h3>
+                            <p className='playTitle'>Console</p>
+                            <button className='playBtn'>
+                                <span className='playOverlay'></span>
+                                <span>Browse</span>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section className='gameSection'></section>
+                <section className='speakerSection'></section>
             </section>
         </main>
     );
