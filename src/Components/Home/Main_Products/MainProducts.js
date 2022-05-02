@@ -87,7 +87,7 @@ const MainProducts = () => {
                                 Gaming
                             </h3>
                             <p className='playTitle'>Console</p>
-                            <button className='playBtn'>
+                            <button className='playBtn mt-5'>
                                 <span className='playOverlay'></span>
                                 <span>Browse</span>
                             </button>
