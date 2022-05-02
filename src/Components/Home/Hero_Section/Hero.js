@@ -3,7 +3,7 @@ import "./Hero.css";
 
 const Hero = () => {
     return (
-        <section className='heroSection relative overflow-hidden'>
+        <section className='heroSection relative overflow-hidden my-2'>
             <p className='md:text-4xl text-xl font-medium sanTitle'>
                 Beats Solo
             </p>

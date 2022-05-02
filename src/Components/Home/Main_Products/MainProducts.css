@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;700&display=swap");
+
+.earSection,
+.wacthSection {
+    width: 100%;
+    height: 100%;
+}
+
+.wacthSection {
+    padding-top: 20px;
+}
+
+.laptopSection {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.earCard {
+    background-color: transparent;
+    background-image: linear-gradient(300deg, #363636 13%, #222 38%);
+    border-radius: 25px;
+    height: 344px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+
+    width: 100%;
+}
+
+.earCard:hover {
+    box-shadow: 0 20px 40px 0 rgba(178, 178, 178, 0.86);
+}
+
+.earTitle {
+    font-family: "Montserrat", Sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    color: #444;
+    letter-spacing: -1.3px;
+}
+
+.earBtn {
+    position: relative;
+    background-color: #f42c37;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.earOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    color: #222;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease-in;
+    border-radius: inherit;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.earBtn:hover .earOverlay,
+.watchBtn:hover .watchOverlay,
+.laptopBtn:hover .laptopOverlay {
+    transform: scale(1);
+}
+
+.earBtn:hover {
+    color: #000;
+}
+
+.watchCard {
+    background-color: transparent;
+    background-image: radial-gradient(
+        at center center,
+        #fec62e 0%,
+        #fec62e 100%
+    );
+    border-radius: 25px;
+    height: 344px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+
+    width: 100%;
+}
+
+.watchCard:hover {
+    box-shadow: 0 20px 40px 0 #ffe399;
+}
+
+.watchTitle {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    letter-spacing: -1.3px;
+    color: #ffd664;
+}
+
+.watchBtn {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #fec62e;
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.watchOverlay,
+.laptopOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease-in;
+    border-radius: inherit;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.watchBtn:hover {
+    color: #fff;
+}
+
+.laptopCard {
+    border-radius: 25px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #f42c37 61%, #ff4e59 100%);
+    height: 344px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+
+    width: 100%;
+}
+
+.laptopCard:hover {
+    box-shadow: 0 20px 40px 0 rgb(244 44 55 / 37%);
+}
+
+.laptopTitle {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    letter-spacing: -1.3px;
+    color: #ff6e7a;
+}
+
+.laptopBtn {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #f42c37;
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.laptopBtn:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .earBtn,
+    .watchBtn,
+    .laptopBtn {
+        padding: 8px 32px;
+        font-size: 15px;
+    }
+
+    .earSection {
+        padding-right: 10px;
+    }
+
+    .wacthSection {
+        padding-left: 10px;
+    }
+
+    .earSection,
+    .wacthSection {
+        width: 50%;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .laptopSection {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .earSection,
+    .wacthSection {
+        width: 25%;
+        height: 100%;
+        padding-right: 8px;
+    }
+
+    .laptopSection {
+        width: 50%;
+        height: 100%;
+        padding-left: 8px;
+        padding-top: 0;
+    }
+}
