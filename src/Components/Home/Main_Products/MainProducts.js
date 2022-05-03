@@ -4,12 +4,16 @@ import LaptopImg from "../../../Assets/Main_Products/Laptop.png";
 import PlayStation from "../../../Assets/Main_Products/PS4.png";
 import GameVr from "../../../Assets/Main_Products/VR-man.png";
 import AmazonSpeaker from "../../../Assets/Main_Products/Alexa-Amazon.png";
+import DeliveryIcon from "../../../Assets/SVG_Icons/Delivery-Icon.svg";
+import MoneyIcon from "../../../Assets/SVG_Icons/Guarantee-Icon.svg";
+import HeadphonesIcon from "../../../Assets/SVG_Icons/Headphones-Icon.svg";
+import WalletIcon from "../../../Assets/SVG_Icons/Wallet-Icon.svg";
 
 import "./MainProducts.css";
 
 const MainProducts = () => {
     return (
-        <main className='my-6 '>
+        <main className='my-6'>
             <section className='flex flex-wrap items-start justify-center w-full'>
                 <section className='earSection'>
                     <figure className='earCard relative overflow-hidden'>
@@ -142,6 +146,73 @@ const MainProducts = () => {
                         </figcaption>
                     </figure>
                 </section>
+            </section>
+
+            <section className='flex flex-wrap justify-between items-start w-full mt-8'>
+                <article className='md:w-1/2 w-full flex justify-around items-center'>
+                    <figure className='flex md:flex-row flex-col md:items-start items-center'>
+                        <img
+                            className='md:w-auto w-1/3'
+                            src={DeliveryIcon}
+                            alt='Delivery Icon'
+                        />
+                        <figcaption className='md:ml-3 md:mt-0 mt-4 ml-0'>
+                            <p className='font-bold text-lg capitalize'>
+                                Free shipping
+                            </p>
+                            <p className='text-gray-400 font-thin capitalize py-1'>
+                                Free Shipping On All Order
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure className='flex md:flex-row flex-col md:items-start items-center'>
+                        <img
+                            className='md:w-auto w-1/3'
+                            src={MoneyIcon}
+                            alt='Guarantee Icon'
+                        />
+                        <figcaption className='md:ml-3 md:mt-0 mt-4 ml-0'>
+                            <p className='font-bold text-lg capitalize'>
+                                Money Guarantee
+                            </p>
+                            <p className='text-gray-400 font-thin capitalize'>
+                                30 Day Money Back
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article className='md:w-1/2 w-full flex justify-around items-center md:mt-0 mt-8'>
+                    <figure className='flex md:flex-row flex-col md:items-start items-center'>
+                        <img
+                            className='md:w-auto w-1/3'
+                            src={HeadphonesIcon}
+                            alt='Headphones Icon'
+                        />
+                        <figcaption className='md:ml-3 md:mt-0 mt-4 ml-0'>
+                            <p className='font-bold text-lg capitalize'>
+                                Online Support 24/7
+                            </p>
+                            <p className='text-gray-400 font-thin capitalize'>
+                                Technical Support 24/7
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure className='flex md:flex-row flex-col md:items-start items-center'>
+                        <img
+                            className='md:w-auto w-1/3'
+                            src={WalletIcon}
+                            alt='Wallet Icon'
+                        />
+                        <figcaption className='md:ml-3 md:mt-0 mt-4 ml-0'>
+                            <p className='font-bold text-lg capitalize'>
+                                Secure payment
+                            </p>
+                            <p className='text-gray-400 font-thin capitalize'>
+                                All cards accepted
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
             </section>
         </main>
     );
