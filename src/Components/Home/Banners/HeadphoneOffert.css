@@ -1,0 +1,78 @@
+.redCard {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #f42c37 61%, #ff4e59 100%);
+    border-radius: 25px;
+    color: #fff;
+    transition: all 0.2s ease-in;
+    max-height: 100%;
+}
+
+.redCard:hover {
+    box-shadow: 0 20px 40px 0 rgb(244 44 55 / 37%);
+}
+
+.redTitle {
+    font-family: montserrat, Sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 70px;
+    letter-spacing: -3.5px;
+    color: #fff;
+    margin: 6px 0;
+    max-width: 412px;
+}
+
+.redBtn {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #f42c37;
+    padding: 8px 32px;
+    font-size: 15px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.redBtn:hover {
+    color: #fff;
+}
+
+.redOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease-in;
+    border-radius: inherit;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.redBtn:hover .redOverlay {
+    transform: scale(1);
+}
+
+@media screen and (min-width: 768px) {
+    .redTitle {
+        font-size: 96px;
+        line-height: 90px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .redTitle {
+        line-height: 90px;
+        font-size: 109px;
+    }
+}
