@@ -78,7 +78,9 @@
 .earBtn:hover .earOverlay,
 .watchBtn:hover .watchOverlay,
 .laptopBtn:hover .laptopOverlay,
-.playBtn:hover .playOverlay {
+.playBtn:hover .playOverlay,
+.gameBtn:hover .gameOverlay,
+.speakerBtn:hover .speakerOverlay {
     transform: scale(1);
 }
 
@@ -132,7 +134,9 @@
 
 .watchOverlay,
 .laptopOverlay,
-.playOverlay {
+.playOverlay,
+.gameOverlay,
+.speakerOverlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,6 +212,10 @@
     width: 100%;
 }
 
+.playCard:hover {
+    box-shadow: 0 20px 40px 0 rgb(239 239 239 / 92%);
+}
+
 .playTitle {
     font-family: "Montserrat";
     font-weight: 900;
@@ -233,20 +241,110 @@
     font-weight: 400;
 }
 
+.gameCard {
+    border-radius: 25px;
+    background-color: #2dd06f;
+    height: 344px;
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+
+.gameCard:hover {
+    box-shadow: 0 20px 40px 0 rgb(45 208 111 / 58%);
+}
+
+.gameTitle {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    color: #58e693;
+    letter-spacing: -1.3px;
+    text-transform: uppercase;
+}
+
+.gameBtn {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #2dd06f;
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.gameBtn:hover {
+    color: #fff;
+}
+
+.speakerCard {
+    border-radius: 25px;
+    height: 344px;
+    width: 100%;
+    transition: all 0.2s ease-in;
+    color: #fff;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #1478ff 0%, #1891ff 100%);
+}
+
+.speakerCard:hover {
+    box-shadow: 0 20px 40px 0 rgb(24 145 255 / 65%);
+}
+
+.speakerTitle {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 61px;
+    letter-spacing: -1.3px;
+    text-transform: uppercase;
+    color: #3a98ff;
+}
+
+.speakerBtn {
+    color: #1478ff;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 12px;
+    border-radius: 60px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    z-index: 13;
+    transition: all 0.2s ease-in;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+.speakerBtn:hover {
+    color: #fff;
+}
+
 @media screen and (min-width: 768px) {
     .earBtn,
     .watchBtn,
     .laptopBtn,
-    .playBtn {
+    .playBtn,
+    .gameBtn,
+    .speakerBtn {
         padding: 8px 32px;
         font-size: 15px;
     }
 
-    .earSection {
+    .earSection,
+    .gameSection {
         padding-right: 10px;
     }
 
-    .wacthSection {
+    .wacthSection,
+    .speakerSection {
         padding-left: 10px;
     }
 
@@ -257,6 +355,11 @@
         width: 50%;
         height: 100%;
         padding-top: 0;
+    }
+
+    .gameSection,
+    .speakerSection {
+        padding-top: 20px;
     }
 
     .laptopSection,
@@ -288,7 +391,12 @@
         padding-right: 8px;
     }
 
-    .gameSection .speakerSection {
+    .gameSection {
+        padding-right: 8px;
+    }
+
+    .gameSection,
+    .speakerSection {
         width: 25%;
         height: 100%;
         padding-left: 8px;

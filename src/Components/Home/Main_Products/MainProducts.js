@@ -2,6 +2,8 @@ import Earphones from "../../../Assets/Main_Products/Earphones.png";
 import YellowWatch from "../../../Assets/Main_Products/Yellow-watch.png";
 import LaptopImg from "../../../Assets/Main_Products/Laptop.png";
 import PlayStation from "../../../Assets/Main_Products/PS4.png";
+import GameVr from "../../../Assets/Main_Products/VR-man.png";
+import AmazonSpeaker from "../../../Assets/Main_Products/Alexa-Amazon.png";
 
 import "./MainProducts.css";
 
@@ -82,7 +84,7 @@ const MainProducts = () => {
                             />
                         </div>
                         <figcaption className='pt-12 md:pl-14 pl-8'>
-                            <h6>Best</h6>
+                            <h6 className='tracking-tighter'>Best</h6>
                             <h3 className='text-black font-bold text-3xl'>
                                 Gaming
                             </h3>
@@ -94,8 +96,52 @@ const MainProducts = () => {
                         </figcaption>
                     </figure>
                 </section>
-                <section className='gameSection'></section>
-                <section className='speakerSection'></section>
+
+                <section className='gameSection'>
+                    <figure className='gameCard relative overflow-hidden'>
+                        <div className='absolute -bottom-6 -right-8'>
+                            <img
+                                className='scale-90 '
+                                src={GameVr}
+                                alt='Virtual Game'
+                            />
+                        </div>
+                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-8 pl-8'>
+                            <h6 className='tracking-tighter'>Play</h6>
+                            <h3 className='tracking-tight font-bold text-3xl'>
+                                Game
+                            </h3>
+                            <p className='gameTitle'>Oculus</p>
+                            <button className='gameBtn mt-5'>
+                                <span className='gameOverlay'></span>
+                                <span>Browse</span>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section className='speakerSection'>
+                    <figure className='speakerCard relative overflow-hidden'>
+                        <div className='absolute -right-10 -bottom-2 rotate-45'>
+                            <img
+                                className='scale-90'
+                                src={AmazonSpeaker}
+                                alt='Alexa Amazon Speaker'
+                            />
+                        </div>
+                        <figcaption className='text-white z-20 flex flex-col justify-start items-start pt-8 pl-8'>
+                            <h6 className='tracking-tighter'>New</h6>
+                            <h3 className='font-bold text-3xl tracking-tight'>
+                                Amazon
+                            </h3>
+                            <p className='speakerTitle'>Speaker</p>
+                            <button className='speakerBtn mt-5'>
+                                <span className='speakerOverlay'></span>
+                                <span>Browse</span>
+                            </button>
+                        </figcaption>
+                    </figure>
+                </section>
             </section>
         </main>
     );
