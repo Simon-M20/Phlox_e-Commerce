@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;700&display=swap");
 
+.productList {
+    margin: 0 2%;
+}
+
 .productCard {
     font-family: "Poppins";
     font-weight: 400;

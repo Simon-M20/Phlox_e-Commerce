@@ -3,7 +3,7 @@ import "./HeadphoneOffert.css";
 
 const HeadphoneOffert = () => {
     return (
-        <section className='redCard mt-48 mb-32'>
+        <section className='redCard'>
             <section className='flex md:flex-row flex-col md:justify-between justify-center lg:items-start items-center lg:pl-48 lg:pr-16 lg:py-28 md:px-8 px-6 md:py-10 pt-24 pb-14 relative'>
                 <article className='lg:w-1/2 w-full flex md:justify-start justify-center md:items-start items-center flex-col md:text-left text-center'>
                     <span className='uppercase text-lg font-thin py-1'>

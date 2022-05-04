@@ -1,3 +1,6 @@
+.postList {
+    margin: 0 2%;
+}
 .postCard,
 .postCard img {
     transition: all 0.2s ease-in;

@@ -4,7 +4,7 @@ import { ProductsData } from "./ProductsData";
 
 const ProductList = () => {
     return (
-        <section className='text-center py-10'>
+        <section className='text-center py-10 productList'>
             <h2 className='lg:text-5xl text-3xl font-bold'>Best Sellers</h2>
             <p className='text-gray-400 md:text-lg py-2 font-thin'>
                 speakerThere are many variations passages

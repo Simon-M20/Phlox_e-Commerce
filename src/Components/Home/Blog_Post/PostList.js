@@ -4,7 +4,7 @@ import { PostData } from "./PostData";
 
 const PostList = () => {
     return (
-        <section className='pb-12 pt-8'>
+        <section className='pb-32 pt-8 postList'>
             <h2 className='lg:text-5xl text-3xl font-bold text-center'>
                 Recent News
             </h2>
