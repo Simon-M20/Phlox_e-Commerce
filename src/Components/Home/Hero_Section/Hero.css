@@ -48,7 +48,7 @@
     background-color: #000;
     height: 100%;
     width: 100%;
-    transition: all 0.32s ease-in;
+    transition: all 0.2s ease-in;
     border-radius: inherit;
     transform: scale(0);
     z-index: -1;
