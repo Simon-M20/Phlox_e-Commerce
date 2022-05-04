@@ -20,8 +20,8 @@ const NavBar = () => {
         setShowMenu(!showMenu);
     };
     return (
-        <header className='flex justify-between items-center md:px-6 px-3 py-4'>
-            <section className='md:w-1/2 flex items-center justify-start'>
+        <header className='flex justify-between items-center lg:px-6 px-2 pt-6 pb-4'>
+            <section className='lg:w-1/2 md:w-4/5 flex items-center justify-start'>
                 <figure className='pr-6'>
                     <img
                         src={PhloxLogo}
@@ -56,7 +56,7 @@ const NavBar = () => {
                     </ul>
                 </nav>
             </section>
-            <section className='flex items-center'>
+            <section className='flex items-center md:w-auto'>
                 <button className='loginBtn md:px-4 px-1'>login</button>
                 <button className='flex items-center md:px-4 px-1'>
                     <span className='material-icons-outlined navIcons'>
