@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className='font-extrabold title'>Headphones</h1>
             <figure className='absolute md:-top-28 top-7 md:-right-36 md:left-0 left-10 md:scale-75'>
                 <img
-                    className='md:right-0 -right-7 md:top-0 -top-2 relative'
+                    className='lg:right-0 -right-7 lg:top-0 md:top-32 -top-2 relative'
                     src={HeroImage}
                     alt='Headphones'
                 />
@@ -21,7 +21,7 @@ const Hero = () => {
                     <span className='overlay'></span>
                     <span>Shop by category</span>
                 </button>
-                <div className='md:block hidden w-1/4 pr-16'>
+                <div className='md:block hidden lg:w-1/4 md:w-1/2 pr-16'>
                     <p className='text-right font-bold'>Description</p>
                     <p className='text-right pt-3'>
                         There are many variations passages of Lorem Ipsum
