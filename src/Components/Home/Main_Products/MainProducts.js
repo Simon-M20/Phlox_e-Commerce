@@ -149,7 +149,7 @@ const MainProducts = () => {
             </section>
 
             <section className='flex flex-wrap justify-between items-start w-full mt-8'>
-                <article className='md:w-1/2 w-full flex justify-around items-center'>
+                <article className='md:w-1/2 w-full flex justify-around items-center md:mt-4 mt-8'>
                     <figure className='flex md:flex-row flex-col md:items-start items-center'>
                         <img
                             className='md:w-auto w-1/3'
@@ -181,7 +181,7 @@ const MainProducts = () => {
                         </figcaption>
                     </figure>
                 </article>
-                <article className='md:w-1/2 w-full flex justify-around items-center md:mt-0 mt-8'>
+                <article className='md:w-1/2 w-full flex justify-around items-center md:mt-4 mt-8'>
                     <figure className='flex md:flex-row flex-col md:items-start items-center'>
                         <img
                             className='md:w-auto w-1/3'

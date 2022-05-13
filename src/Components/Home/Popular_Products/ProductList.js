@@ -9,7 +9,7 @@ const ProductList = () => {
             <p className='text-gray-400 md:text-lg py-2 font-thin'>
                 speakerThere are many variations passages
             </p>
-            <article className='grid lg:grid-cols-4 md:grid-cols-2 lg:gap-x-4 md:gap-x-8 md:gap-y-8 gap-y-4 justify-items-center mt-8'>
+            <article className='grid lg:grid-cols-4 md:grid-cols-2 lg:gap-x-4 md:gap-x-5 md:gap-y-8 gap-y-4 justify-items-center mt-8'>
                 {ProductsData.map((item, index) => (
                     <ProductCard
                         key={index}

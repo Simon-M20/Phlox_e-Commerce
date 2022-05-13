@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import PhloxLogo from "../../../Assets/Phlox_Logo.png";
+import "./Footer.css";
 
 const Footer = () => {
     return (
@@ -22,10 +24,29 @@ const Footer = () => {
                 <p className='text-lg font-bold mb-4'>Quick Links</p>
                 <nav>
                     <ul>
-                        <li className='my-2 cursor-pointer'>Home</li>
-                        <li className='my-2 cursor-pointer'>About</li>
-                        <li className='my-2 cursor-pointer'>Shop</li>
-                        <li className='my-2 cursor-pointer'>Contact</li>
+                        <li className='my-2 cursor-pointer'>
+                            {/* <a href='#' className='footer__links'>
+                                Home
+                            </a> */}
+                            <Link to='/' className='footer_links'>
+                                Home
+                            </Link>
+                        </li>
+                        <li className='my-2 cursor-pointer'>
+                            <Link to='/About-us' className='footer__links'>
+                                About
+                            </Link>
+                        </li>
+                        <li className='my-2 cursor-pointer'>
+                            <Link to='/Shop' className='footer__links'>
+                                Shop
+                            </Link>
+                        </li>
+                        <li className='my-2 cursor-pointer'>
+                            <Link to='/Contact-us' className='footer__links'>
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </section>
@@ -37,18 +58,32 @@ const Footer = () => {
                 </p>
             </section>
             <section className='md:w-2/5'>
-                <p className='font-bold text-lg'>Subscribe To Our Email</p>
-                <form>
-                    <label htmlFor='newsletter'>
+                <p className='font-bold text-lg mb-4'>Subscribe To Our Email</p>
+                <form className='md:pl-6 pl-0'>
+                    <label htmlFor='newsletter' className='font-bold text-2xl'>
                         For Latest News & Updates
                     </label>
-                    <div>
+                    <div className='relative mt-3 flex items-center w-4/5'>
                         <input
                             type='text'
                             id='newsletter'
                             placeholder='Enter your Email'
+                            className='w-full border rounded-full pl-6 pr-8 py-3 focus:outline-none'
+                            style={{
+                                backgroundColor: "transparent",
+                                backgroundImage:
+                                    "linear-gradient(-105deg, #dcdcdc 54%, #eee 68%)",
+                            }}
                         />
-                        <button>Subscribe</button>
+                        <button
+                            className='absolute right-1 py-2 border px-7 rounded-full text-white'
+                            style={{
+                                backgroundColor: "transparent",
+                                backgroundImage:
+                                    "linear-gradient(-90deg, #f42c37 61%, #ff4e59 100%)",
+                            }}>
+                            Subscribe
+                        </button>
                     </div>
                 </form>
             </section>

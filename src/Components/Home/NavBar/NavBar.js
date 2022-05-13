@@ -2,6 +2,7 @@ import PhloxLogo from "../../../Assets/Phlox_Logo.png";
 import "./NavBar.css";
 import "./MenuBtn.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -33,25 +34,29 @@ const NavBar = () => {
                 <nav className={`${showMenu ? "menu is-active" : "menu"}`}>
                     <button
                         className='md:hidden block menuClose'
-                        onClick={() => setShowMenu(false)}
-                    >
+                        onClick={() => setShowMenu(false)}>
                         <span className='material-icons-outlined'>close</span>
                     </button>
                     <ul>
                         <li>
-                            <a href='#'>Home</a>
+                            <Link to='/'>Home</Link>
+                            {/* <a href='#'>Home</a> */}
                         </li>
                         <li>
-                            <a href='#'>Shop</a>
+                            <Link to='/Shop'>Shop</Link>
+                            {/* <a href='#'>Shop</a> */}
                         </li>
                         <li>
-                            <a href='#'>About Us</a>
+                            <Link to='/About-us'>About Us</Link>
+                            {/* <a href='#'>About Us</a> */}
                         </li>
                         <li>
-                            <a href='#'>Blog</a>
+                            <Link to='/Blog'>Blog</Link>
+                            {/* <a href='#'>Blog</a> */}
                         </li>
                         <li>
-                            <a href='#'>Contact Us</a>
+                            <Link to='/Contact-us'>Contact Us</Link>
+                            {/* <a href='#'>Contact Us</a> */}
                         </li>
                     </ul>
                 </nav>
@@ -71,8 +76,7 @@ const NavBar = () => {
                 <button
                     className='hamburger-list hamburger--vortex menuList'
                     type='button'
-                    onClick={handleMenuClick}
-                >
+                    onClick={handleMenuClick}>
                     <span className='hamburger-list--box'>
                         <span className='hamburger-list-inner'></span>
                     </span>
