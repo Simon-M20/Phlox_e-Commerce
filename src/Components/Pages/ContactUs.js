@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ContactSection from "../Contact_Section/ContactSection";
+import BrandsContainer from "../Home/Brands/BrandsContainer";
 import Footer from "../Home/Footer/Footer";
 import NavBar from "../Home/NavBar/NavBar";
 
@@ -21,6 +23,8 @@ const ContactUs = () => {
                     Contact Us
                 </h2>
             </section>
+            <ContactSection />
+            <BrandsContainer />
             <Footer />
         </section>
     );
