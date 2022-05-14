@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PostCard from "../Home/Blog_Post/PostCard";
+import { AllPost } from "../Home/Blog_Post/PostData";
+import BrandsContainer from "../Home/Brands/BrandsContainer";
 import Footer from "../Home/Footer/Footer";
 import NavBar from "../Home/NavBar/NavBar";
 
@@ -21,6 +24,19 @@ const Blog = () => {
                     Blog
                 </h2>
             </section>
+            <section className='grid lg:grid-cols-3 md:grid-cols-2 md:gap-x-10 gap-y-14 justify-items-center md:py-32 py-16 md:px-10 px-2'>
+                {AllPost.map((post, index) => (
+                    <PostCard
+                        key={index}
+                        title={post.title}
+                        author={post.author}
+                        date={post.time}
+                        content={post.content}
+                        image={post.image}
+                    />
+                ))}
+            </section>
+            <BrandsContainer />
             <Footer />
         </section>
     );
