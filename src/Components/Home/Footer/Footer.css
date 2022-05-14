@@ -5,3 +5,12 @@
 .footer__links:hover {
     color: #f42c37;
 }
+
+.footer__rights {
+    padding: 1% 2%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+}

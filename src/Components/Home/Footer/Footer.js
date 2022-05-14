@@ -103,11 +103,19 @@ const Footer = () => {
                     </form>
                 </section>
             </section>
-            <section>
-                <article>
-                    <p>© 2022 Phlox All rights reserved.</p>
+            <section className='footer__rights'>
+                <article className='p-2.5'>
+                    <p>
+                        © 2020 shop-digital - All Rights Reserved. Phlox Theme
+                    </p>
                 </article>
-                <article></article>
+                <article>
+                    <div>
+                        <Link to='/Privacy-Policy'>Privacy Policy</Link>
+                        <span className='mx-2'>·</span>
+                        <Link to='/Term-Condition'>Term Condition</Link>
+                    </div>
+                </article>
             </section>
         </footer>
     );
