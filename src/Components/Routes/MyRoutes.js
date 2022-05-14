@@ -5,6 +5,7 @@ import Blog from "../Pages/Blog";
 import ContactUs from "../Pages/ContactUs";
 import Home from "../Pages/Home";
 import Shop from "../Pages/Shop";
+import Error404 from "../Ui/Error404";
 
 const MyRoutes = () => {
     return (
@@ -15,6 +16,7 @@ const MyRoutes = () => {
                 <Route path='Shop' element={<Shop />} />
                 <Route path='Blog' element={<Blog />} />
                 <Route path='Contact-us' element={<ContactUs />} />
+                <Route path='*' element={<Error404 />} />
             </Routes>
         </HashRouter>
     );
