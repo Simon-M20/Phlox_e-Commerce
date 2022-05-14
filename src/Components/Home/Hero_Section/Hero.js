@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import HeroImage from "../../../Assets/Hero_Image.png";
 import "./Hero.css";
 
 const Hero = () => {
+    const navigate = useNavigate();
     return (
         <section className='heroSection relative overflow-hidden my-2'>
             <p className='md:text-4xl text-xl font-medium sanTitle'>
@@ -17,7 +19,9 @@ const Hero = () => {
                 />
             </figure>
             <section className='md:mt-8 mt-6 flex justify-between items-start'>
-                <button className='capitalize heroBtn'>
+                <button
+                    className='capitalize heroBtn'
+                    onClick={() => navigate("/Shop")}>
                     <span className='overlay'></span>
                     <span>Shop by category</span>
                 </button>

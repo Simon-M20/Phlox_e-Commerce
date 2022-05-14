@@ -7,29 +7,29 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
-    const handleMenuClick = () => {
-        const menuBtn = document.querySelector(".menuList");
+    // const handleMenuClick = () => {
+    //     const menuBtn = document.querySelector(".menuList");
 
-        if (menuBtn.classList.contains("is-active")) {
-            menuBtn.classList.remove("is-active");
-            // console.log(menuBtn);
-        } else {
-            menuBtn.classList.add("is-active");
-            // console.log(menuBtn);
-        }
+    //     if (menuBtn.classList.contains("is-active")) {
+    //         menuBtn.classList.remove("is-active");
+    //     } else {
+    //         menuBtn.classList.add("is-active");
+    //     }
 
-        setShowMenu(!showMenu);
-    };
+    //     setShowMenu(!showMenu);
+    // };
     return (
-        <header className='flex justify-between items-center lg:px-6 px-2 pt-5 pb-4'>
+        <header className='flex justify-between items-center lg:px-10 px-2 pt-7 pb-6'>
             <section className='lg:w-1/2 md:w-4/5 flex items-center justify-start'>
                 <figure className='pr-6'>
-                    <img
-                        src={PhloxLogo}
-                        alt='Phlox Logo'
-                        loading='lazy'
-                        title='Phlox Logo'
-                    />
+                    <Link to='/'>
+                        <img
+                            src={PhloxLogo}
+                            alt='Phlox Logo'
+                            loading='lazy'
+                            title='Phlox Logo'
+                        />
+                    </Link>
                 </figure>
                 <nav className={`${showMenu ? "menu is-active" : "menu"}`}>
                     <button
@@ -74,9 +74,11 @@ const NavBar = () => {
                     </span>
                 </button>
                 <button
-                    className='hamburger-list hamburger--vortex menuList'
+                    className={`hamburger-list hamburger--vortex ${
+                        showMenu ? "menuList is-active" : "menuList"
+                    } `}
                     type='button'
-                    onClick={handleMenuClick}>
+                    onClick={() => setShowMenu(!showMenu)}>
                     <span className='hamburger-list--box'>
                         <span className='hamburger-list-inner'></span>
                     </span>

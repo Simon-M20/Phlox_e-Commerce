@@ -10,8 +10,10 @@ import HeadphonesIcon from "../../../Assets/SVG_Icons/Headphones-Icon.svg";
 import WalletIcon from "../../../Assets/SVG_Icons/Wallet-Icon.svg";
 
 import "./MainProducts.css";
+import { useNavigate } from "react-router-dom";
 
 const MainProducts = () => {
+    const navigate = useNavigate();
     return (
         <main className='my-6'>
             <section className='flex flex-wrap items-start justify-center w-full'>
@@ -30,7 +32,9 @@ const MainProducts = () => {
                                 With
                             </h3>
                             <p className='earTitle'>Earphone</p>
-                            <button className='earBtn mt-5'>
+                            <button
+                                className='earBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='earOverlay'></span>
                                 <span>Browse</span>
                             </button>
@@ -49,7 +53,9 @@ const MainProducts = () => {
                                 Wear
                             </h3>
                             <p className='watchTitle'>Gadgets</p>
-                            <button className='watchBtn mt-5'>
+                            <button
+                                className='watchBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='watchOverlay'></span>
                                 <span>Browse</span>
                             </button>
@@ -68,7 +74,9 @@ const MainProducts = () => {
                                 Devices
                             </h3>
                             <p className='laptopTitle'>Laptop</p>
-                            <button className='laptopBtn mt-5'>
+                            <button
+                                className='laptopBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='laptopOverlay'></span>
                                 <span>Browse</span>
                             </button>
@@ -93,7 +101,9 @@ const MainProducts = () => {
                                 Gaming
                             </h3>
                             <p className='playTitle'>Console</p>
-                            <button className='playBtn mt-5'>
+                            <button
+                                className='playBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='playOverlay'></span>
                                 <span>Browse</span>
                             </button>
@@ -116,7 +126,9 @@ const MainProducts = () => {
                                 Game
                             </h3>
                             <p className='gameTitle'>Oculus</p>
-                            <button className='gameBtn mt-5'>
+                            <button
+                                className='gameBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='gameOverlay'></span>
                                 <span>Browse</span>
                             </button>
@@ -139,7 +151,9 @@ const MainProducts = () => {
                                 Amazon
                             </h3>
                             <p className='speakerTitle'>Speaker</p>
-                            <button className='speakerBtn mt-5'>
+                            <button
+                                className='speakerBtn mt-5'
+                                onClick={() => navigate("/Shop")}>
                                 <span className='speakerOverlay'></span>
                                 <span>Browse</span>
                             </button>

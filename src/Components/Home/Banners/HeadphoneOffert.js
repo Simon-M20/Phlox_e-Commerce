@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import RedHeadphones from "../../../Assets/Products/Red-Headphones.png";
 import "./HeadphoneOffert.css";
 
 const HeadphoneOffert = () => {
+    const navigate = useNavigate();
     return (
         <section className='redCard'>
             <section className='flex md:flex-row flex-col md:justify-between justify-center lg:items-start items-center lg:pl-48 lg:pr-16 lg:py-28 md:px-8 px-6 md:py-10 pt-24 pb-14 relative'>
@@ -30,7 +32,9 @@ const HeadphoneOffert = () => {
                         Company that's grown from 270 to 480 employees in the
                         last 12 months.
                     </p>
-                    <button className='redBtn mt-8'>
+                    <button
+                        className='redBtn mt-8'
+                        onClick={() => navigate("/Shop")}>
                         <span className='redOverlay'></span>
                         <span>Shop</span>
                     </button>

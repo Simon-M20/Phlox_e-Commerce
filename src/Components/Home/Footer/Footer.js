@@ -3,16 +3,24 @@ import PhloxLogo from "../../../Assets/Phlox_Logo.png";
 import "./Footer.css";
 
 const Footer = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        alert("Dandote pruck pruck prack");
+    };
+
     return (
         <footer className='py-16 lg:px-8 md:px-5 px-3 flex flex-wrap justify-evenly items-start w-full'>
             <figure className='md:w-1/5'>
-                <img src={PhloxLogo} alt='Phlox Logo' />
+                <Link to='/'>
+                    <img src={PhloxLogo} alt='Phlox Logo' />
+                </Link>
                 <figcaption className='mt-8'>
                     <p>
                         There are many variations passages of Lorem Ipsum
                         available, but the majority have
                     </p>
-                    <div className='mt-6'>
+                    <div className='md:mt-6 mt-3'>
                         <i className='fa-brands fa-instagram md:text-2xl text-xl cursor-pointer hover:opacity-75 px-2.5 py-1'></i>
                         <i className='fa-brands fa-linkedin-in md:text-2xl text-xl cursor-pointer hover:opacity-75 px-2.5 py-1'></i>
                         <i className='fa-brands fa-facebook-f md:text-2xl text-xl cursor-pointer hover:opacity-75 px-2.5 py-1'></i>
@@ -20,7 +28,7 @@ const Footer = () => {
                     </div>
                 </figcaption>
             </figure>
-            <section className='md:w-1/6 flex flex-col justify-center items-center'>
+            <section className='md:w-1/6 w-full flex flex-col md:justify-center justify-start md:items-center items-start md:mt-0 mt-4'>
                 <p className='text-lg font-bold mb-4'>Quick Links</p>
                 <nav>
                     <ul>
@@ -28,7 +36,7 @@ const Footer = () => {
                             {/* <a href='#' className='footer__links'>
                                 Home
                             </a> */}
-                            <Link to='/' className='footer_links'>
+                            <Link to='/' className='footer__links'>
                                 Home
                             </Link>
                         </li>
@@ -50,20 +58,24 @@ const Footer = () => {
                     </ul>
                 </nav>
             </section>
-            <section className='md:w-1/5'>
-                <p className='text-lg font-bold mb-6'>Contact</p>
+            <section className='md:w-1/5 w-full md:mt-0 mt-4'>
+                <p className='text-lg font-bold md:mb-6 mb-4'>Contact</p>
                 <p>
                     +99 (0) 101 0000 888 Patricia C. Amedee 4401 Waldeck Street
                     Grapevine Nashville, Tx 76051
                 </p>
             </section>
-            <section className='md:w-2/5'>
-                <p className='font-bold text-lg mb-4'>Subscribe To Our Email</p>
-                <form className='md:pl-6 pl-0'>
-                    <label htmlFor='newsletter' className='font-bold text-2xl'>
+            <section className='md:w-2/5 w-full mt-6 md:mt-0'>
+                <p className='font-bold text-lg md:mb-4 mb-2'>
+                    Subscribe To Our Email
+                </p>
+                <form className='md:pl-6 pl-0' onSubmit={handleSubmit}>
+                    <label
+                        htmlFor='newsletter'
+                        className='font-bold md:text-2xl text-xl'>
                         For Latest News & Updates
                     </label>
-                    <div className='relative mt-3 flex items-center w-4/5'>
+                    <div className='relative mt-3 flex items-center md:w-4/5 w-full'>
                         <input
                             type='text'
                             id='newsletter'
