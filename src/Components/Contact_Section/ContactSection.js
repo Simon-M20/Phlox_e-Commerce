@@ -15,8 +15,8 @@ const ContactSection = () => {
     };
 
     return (
-        <section className='flex justify-center items-center md:px-10 px-2 py-32'>
-            <article className='md:w-2/5 w-full '>
+        <section className='flex flex-wrap justify-center items-center md:px-10 px-2 py-32'>
+            <article className='md:w-2/5 w-full md:mb-0 mb-10'>
                 <p
                     className='capitalize font-semibold'
                     style={{ color: "#f42c37" }}>
