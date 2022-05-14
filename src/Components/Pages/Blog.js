@@ -13,7 +13,7 @@ const Blog = () => {
                         <Link to='/'>Home</Link>
                     </p>
                     <span class='material-icons-outlined mx-2'>
-                        keyboard_double_arrow_right
+                        keyboard_arrow_right
                     </span>
                     <p>Blog</p>
                 </article>
