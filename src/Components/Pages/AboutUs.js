@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import WhoWeAre from "../About/WhoWeAre";
+import BrandsContainer from "../Home/Brands/BrandsContainer";
 import Footer from "../Home/Footer/Footer";
 import NavBar from "../Home/NavBar/NavBar";
+// import AboutUsImg from "../../Assets/About_Us.png";
 
 const AboutUs = () => {
     return (
@@ -21,7 +24,8 @@ const AboutUs = () => {
                     About Us
                 </h2>
             </section>
-
+            <WhoWeAre />
+            <BrandsContainer />
             <Footer />
         </section>
     );
