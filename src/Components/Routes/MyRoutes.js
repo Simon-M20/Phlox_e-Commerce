@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import PostInfo from "../Blog/PostInfo";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
 import ContactUs from "../Pages/ContactUs";
@@ -14,7 +15,12 @@ const MyRoutes = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='About-us' element={<AboutUs />} />
                 <Route path='Shop' element={<Shop />} />
-                <Route path='Blog' element={<Blog />} />
+                <Route path='Blog' element={<Blog />}>
+                    <Route
+                        path='Category/Uncategorized/:name'
+                        element={<PostInfo />}
+                    />
+                </Route>
                 <Route path='Contact-us' element={<ContactUs />} />
                 <Route path='*' element={<Error404 />} />
             </Routes>

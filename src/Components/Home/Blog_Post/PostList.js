@@ -20,6 +20,7 @@ const PostList = () => {
                         date={post.time}
                         content={post.content}
                         image={post.image}
+                        id={index}
                     />
                 ))}
             </article>

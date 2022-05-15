@@ -33,6 +33,7 @@ const Blog = () => {
                         date={post.time}
                         content={post.content}
                         image={post.image}
+                        id={index}
                     />
                 ))}
             </section>
