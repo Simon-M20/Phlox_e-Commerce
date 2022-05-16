@@ -37,17 +37,32 @@ const ContactSection = () => {
                         type='text'
                         placeholder='Your E-mail'
                         className='w-full border rounded-2xl px-6 py-3.5 mb-3 focus:outline-none'
+                        style={{
+                            backgroundColor: "transparent",
+                            backgroundImage:
+                                "linear-gradient(-105deg, #dcdcdc 54%, #eee 68%)",
+                        }}
                     />
                     <input
                         type='text'
                         placeholder='Phone number'
                         className='w-full border rounded-2xl px-6 py-3.5 mb-3 focus:outline-none'
+                        style={{
+                            backgroundColor: "transparent",
+                            backgroundImage:
+                                "linear-gradient(-105deg, #dcdcdc 54%, #eee 68%)",
+                        }}
                     />
                     <textarea
                         placeholder='Your Message Here'
                         rows='6'
                         className='w-full rounded-2xl px-5 py-4 border focus:outline-none'
-                        style={{ resize: "none" }}></textarea>
+                        style={{
+                            resize: "none",
+                            backgroundColor: "transparent",
+                            backgroundImage:
+                                "linear-gradient(-105deg, #dcdcdc 54%, #eee 68%)",
+                        }}></textarea>
                     <div className='flex justify-end items-end w-4/5'>
                         <button className='aboutBtn'>
                             <span className='aboutBtn-overlay'></span>

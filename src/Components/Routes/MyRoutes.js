@@ -15,12 +15,11 @@ const MyRoutes = () => {
                 <Route path='/' element={<Home />} />
                 <Route path='About-us' element={<AboutUs />} />
                 <Route path='Shop' element={<Shop />} />
-                <Route path='Blog' element={<Blog />}>
-                    <Route
-                        path='Category/Uncategorized/:name'
-                        element={<PostInfo />}
-                    />
-                </Route>
+                <Route path='Blog' element={<Blog />} />
+                <Route
+                    path='Blog/Category/Uncategorized/:name'
+                    element={<PostInfo />}
+                />
                 <Route path='Contact-us' element={<ContactUs />} />
                 <Route path='*' element={<Error404 />} />
             </Routes>

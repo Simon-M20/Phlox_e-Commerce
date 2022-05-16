@@ -10,7 +10,7 @@ const Shop = () => {
             <NavBar />
             <section className='routes-section'>
                 <article className='flex items-center justify-center font-thin md:text-lg'>
-                    <p className='hover:opacity-75'>
+                    <p className='routes__links'>
                         <Link to='/'>Home</Link>
                     </p>
                     <span class='material-icons-outlined mx-2'>

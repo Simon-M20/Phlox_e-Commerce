@@ -36,3 +36,13 @@ body {
     background-image: linear-gradient(105deg, #dcdcdc 54%, #eee 68%);
     padding: 2.5rem 0;
 }
+
+.routes__links {
+    transition: all 0.2s ease-in;
+}
+
+.routes__links:hover {
+    opacity: 0.75;
+    color: #f42c37;
+    text-decoration: underline;
+}
