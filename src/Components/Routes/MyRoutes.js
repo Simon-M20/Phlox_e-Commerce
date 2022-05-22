@@ -1,5 +1,7 @@
 import React from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import Categories from "../Blog/Categories";
+import CategoriesBlog from "../Blog/CategoriesBlog";
 import PostInfo from "../Blog/PostInfo";
 import AboutUs from "../Pages/AboutUs";
 import Blog from "../Pages/Blog";
@@ -19,6 +21,11 @@ const MyRoutes = () => {
                 <Route
                     path='Blog/Category/Uncategorized/:name'
                     element={<PostInfo />}
+                />
+                <Route path='Blog/Category' element={<Categories />} />
+                <Route
+                    path='Blog/Category/:name'
+                    element={<CategoriesBlog />}
                 />
                 <Route path='Contact-us' element={<ContactUs />} />
                 <Route path='*' element={<Error404 />} />
