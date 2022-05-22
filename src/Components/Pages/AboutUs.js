@@ -20,7 +20,7 @@ const AboutUs = () => {
                     </span>
                     <p>About Us</p>
                 </article>
-                <h2 className='md:text-3xl text-2xl text-black font-extrabold text-center mt-3'>
+                <h2 className='text-3xl text-black font-extrabold text-center mt-3'>
                     About Us
                 </h2>
             </section>

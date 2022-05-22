@@ -5,7 +5,7 @@ import "./Hero.css";
 const Hero = () => {
     const navigate = useNavigate();
     return (
-        <section className='heroSection relative overflow-hidden my-2'>
+        <section className='heroSection relative overflow-hidden my-2 md:mx-8 mx-4'>
             <p className='md:text-4xl text-xl font-medium sanTitle'>
                 Beats Solo
             </p>

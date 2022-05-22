@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 const MainProducts = () => {
     const navigate = useNavigate();
     return (
-        <main className='my-6'>
+        <main className='my-6 md:mx-8 mx-4'>
             <section className='flex flex-wrap items-start justify-center w-full'>
                 <section className='earSection'>
                     <figure className='earCard relative overflow-hidden'>

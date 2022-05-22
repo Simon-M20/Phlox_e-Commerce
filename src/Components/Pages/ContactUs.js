@@ -19,7 +19,7 @@ const ContactUs = () => {
                     </span>
                     <p>Contact Us</p>
                 </article>
-                <h2 className='md:text-3xl text-2xl text-black font-extrabold text-center mt-3'>
+                <h2 className='text-3xl text-black font-extrabold text-center mt-3'>
                     Contact Us
                 </h2>
             </section>

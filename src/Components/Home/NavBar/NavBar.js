@@ -19,7 +19,7 @@ const NavBar = () => {
     //     setShowMenu(!showMenu);
     // };
     return (
-        <header className='flex justify-between items-center lg:px-10 px-2 pt-7 pb-6'>
+        <header className='flex justify-between items-center lg:px-10 px-4 pt-7 pb-6'>
             <section className='lg:w-1/2 md:w-4/5 flex items-center justify-start'>
                 <figure className='pr-6'>
                     <Link to='/'>

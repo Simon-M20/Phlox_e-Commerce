@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <section className='py-16 lg:px-8 md:px-5 px-3 flex flex-wrap justify-evenly items-start w-full'>
+            <section className='py-16 lg:px-8 md:px-6 px-4 flex flex-wrap justify-evenly items-start w-full'>
                 <figure className='md:w-1/5'>
                     <Link to='/'>
                         <img src={PhloxLogo} alt='Phlox Logo' />
@@ -34,9 +34,6 @@ const Footer = () => {
                     <nav>
                         <ul>
                             <li className='my-2 cursor-pointer'>
-                                {/* <a href='#' className='footer__links'>
-                                Home
-                            </a> */}
                                 <Link to='/' className='footer__links'>
                                     Home
                                 </Link>
@@ -75,7 +72,7 @@ const Footer = () => {
                     <form className='md:pl-6 pl-0' onSubmit={handleSubmit}>
                         <label
                             htmlFor='newsletter'
-                            className='font-bold md:text-2xl text-xl'>
+                            className='font-bold md:text-2xl text-lg md:pl-0 pl-3'>
                             For Latest News & Updates
                         </label>
                         <div className='relative mt-3 flex items-center md:w-4/5 w-full'>
@@ -91,7 +88,7 @@ const Footer = () => {
                                 }}
                             />
                             <button
-                                className='absolute right-1 py-2 border px-7 rounded-full text-white'
+                                className='absolute right-1 py-2 border px-7 md:text-base text-sm rounded-full text-white'
                                 style={{
                                     backgroundColor: "transparent",
                                     backgroundImage:
@@ -103,7 +100,7 @@ const Footer = () => {
                     </form>
                 </section>
             </section>
-            <section className='footer__rights flex md:flex-row flex-col items-center md:justify-between justify-center text-sm'>
+            <section className='footer__rights pt-3 md:pb-3 pb-6 px-4 flex md:flex-row flex-col items-center md:justify-between justify-center text-sm'>
                 <article className='p-2.5'>
                     <p>
                         © 2020 shop-digital - All Rights Reserved. Phlox Theme
