@@ -5,8 +5,8 @@ const Comments = () => {
         alert("Sending pruck pruck prack");
     };
     return (
-        <section className='md:w-3/4 mx-auto w-full md:px-0 px-2'>
-            <h4 className='text-xl font-semibold'>Leave a comment</h4>
+        <section className='md:w-3/4 mx-auto w-full md:px-0 px-8'>
+            <h4 className='text-xl font-bold'>Leave a comment</h4>
             <p className='py-2'>
                 Your email address will not be published. Required fields are
                 marked *
@@ -16,7 +16,7 @@ const Comments = () => {
                     <input
                         type='text'
                         placeholder='Email'
-                        className='md:w-1/2 border rounded-full py-3 pl-7 mr-4 focus:outline-none'
+                        className='w-1/2 border rounded-full py-3 pl-7 md:mr-4 mr-2 focus:outline-none'
                         style={{
                             backgroundColor: "transparent",
                             backgroundImage:
@@ -26,7 +26,7 @@ const Comments = () => {
                     <input
                         type='text'
                         placeholder='Web'
-                        className='md:w-1/2 border rounded-full py-3 pl-7 ml-4 focus:outline-none'
+                        className='w-1/2 border rounded-full py-3 pl-7 md:ml-4 ml-2 focus:outline-none'
                         style={{
                             backgroundColor: "transparent",
                             backgroundImage:
@@ -45,7 +45,7 @@ const Comments = () => {
                             "linear-gradient(-105deg, #dcdcdc 54%, #eee 68%)",
                     }}></textarea>
                 <div className='flex justify-end items-center w-full'>
-                    <button className='aboutBtn mr-4'>
+                    <button className='aboutBtn mr-4 md:text-base text-sm'>
                         <span className='aboutBtn-overlay'></span>
                         <span>Submit</span>
                     </button>

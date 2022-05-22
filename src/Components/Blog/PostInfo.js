@@ -18,7 +18,7 @@ const PostInfo = () => {
         <section>
             <NavBar />
             <section className='routes-section'>
-                <article className='flex items-center justify-center font-thin md:text-lg'>
+                <article className='flex flex-wrap items-center justify-center font-thin md:text-lg'>
                     <Link to='/' className='routes__links'>
                         Home
                     </Link>
@@ -47,21 +47,21 @@ const PostInfo = () => {
                     </span>
                     <p>{name}</p>
                 </article>
-                <h2 className='md:text-3xl text-2xl text-black font-extrabold text-center mt-3'>
+                <h2 className='text-3xl text-black font-extrabold text-center mt-4'>
                     {name}
                 </h2>
             </section>
 
             <section className='md:w-3/4 md:px-0 px-2 w-full mx-auto'>
-                <figure className='post__img mx-auto pt-16 pb-10'>
+                <figure className='post__img mx-auto pt-16 pb-10 px-4'>
                     <img src={postInfo.image} alt={postInfo.title} />
                 </figure>
-                <article className='flex items-center justify-start mx-auto'>
+                <article className='flex items-center justify-start mx-auto px-2'>
                     <p className='post__date'>{postInfo.date}</p>
                     <span className='mx-2'>·</span>
                     <p>{postInfo.author}</p>
                 </article>
-                <article className='px-6 pt-2 pb-32'>
+                <article className='px-6 pt-2 pb-32 md:text-base text-sm'>
                     <h3 className='text-2xl text-center font-semibold my-6'>
                         {postInfo.title}
                     </h3>
