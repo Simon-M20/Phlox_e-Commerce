@@ -1,9 +1,14 @@
 .postList {
-    margin: 0 2%;
+    margin: 0 4%;
 }
 .postCard,
 .postCard img {
     transition: all 0.2s ease-in;
+}
+
+.postCard img {
+    max-height: 280px;
+    width: 100%;
 }
 
 .postCard:hover img {
