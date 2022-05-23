@@ -19,6 +19,7 @@ export const PostData = [
         content:
             "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...",
         image: `${SmartWatch}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -27,6 +28,7 @@ export const PostData = [
         content:
             "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper ...",
         image: `${Laptop}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -35,6 +37,7 @@ export const PostData = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Metaverse}`,
+        category: "Uncategorized",
     },
 ];
 
@@ -46,6 +49,7 @@ export const AllPost = [
         content:
             "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s ...",
         image: `${SmartWatch}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -54,6 +58,7 @@ export const AllPost = [
         content:
             "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper ...",
         image: `${Laptop}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -62,6 +67,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Metaverse}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -70,6 +76,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Airpods}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -78,6 +85,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Apple}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -86,6 +94,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${CoolLaptop}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -94,6 +103,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${FoldingHeadphones}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -102,6 +112,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Procesador}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -110,6 +121,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${Watch}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -118,6 +130,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${WirelessHeadphones}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -126,6 +139,7 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${JBLHeadphones}`,
+        category: "Uncategorized",
     },
     {
         time: "October 5, 2019",
@@ -134,5 +148,6 @@ export const AllPost = [
         content:
             "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ...",
         image: `${PlayStation}`,
+        category: "Uncategorized",
     },
 ];

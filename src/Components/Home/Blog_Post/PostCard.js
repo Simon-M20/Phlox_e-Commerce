@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import GlobalContext from "../../../Context/GlobalContext";
 import "./PostCard.css";
 
-const PostCard = ({ title, date, author, content, image, id }) => {
+const PostCard = ({ title, date, author, content, image, category }) => {
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -12,29 +12,37 @@ const PostCard = ({ title, date, author, content, image, id }) => {
     const handleNavigation = () => {
         if (location.pathname === "/") {
             navigate(`Blog/Category/Uncategorized/${title}`);
-        } else {
+        }
+
+        if (location.pathname === "/Blog") {
             navigate(`Category/Uncategorized/${title}`);
         }
 
-        setPostInfo({ title, date, author, content, image });
+        if (location.pathname === "/Blog/Category") {
+            navigate(`Uncategorized/${title}`);
+        }
+
+        setPostInfo({ title, date, author, content, image, category });
     };
 
     return (
         <figure className='postCard'>
-            {/* <Link to={`Category/Uncategorized/${title}`}> */}
             <img
                 className='rounded-3xl cursor-pointer'
                 src={image}
                 alt={title}
                 onClick={handleNavigation}
             />
-            {/* </Link> */}
             <figcaption className='pt-6'>
-                <span className='font-thin'>
-                    {date} · {author}
+                <span className='font-thin flex items-center justify-start mx-auto px-2'>
+                    <p className='post__date'>{date}</p>
+                    <span className='mx-2'>·</span>
+                    <p>{author}</p>
+                    <span className='mx-2'>·</span>
+                    <p>{category}</p>
                 </span>
                 <h3
-                    className='py-5 text-balck font-extrabold text-2xl cursor-pointer'
+                    className='py-5 text-black font-extrabold text-2xl cursor-pointer'
                     onClick={handleNavigation}>
                     {title}
                 </h3>

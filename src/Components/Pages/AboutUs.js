@@ -8,7 +8,7 @@ import NavBar from "../Home/NavBar/NavBar";
 
 const AboutUs = () => {
     return (
-        <section>
+        <>
             <NavBar />
             <section className='routes-section'>
                 <article className='flex items-center justify-center font-thin md:text-lg'>
@@ -27,7 +27,7 @@ const AboutUs = () => {
             <WhoWeAre />
             <BrandsContainer />
             <Footer />
-        </section>
+        </>
     );
 };
 

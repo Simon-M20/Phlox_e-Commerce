@@ -18,7 +18,7 @@
 
 .post__date {
     font-weight: 100;
-    color: #f42c37;
+    color: var(--main-color);
 }
 
 @media screen and (min-width: 768px) {

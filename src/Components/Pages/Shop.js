@@ -6,7 +6,7 @@ import NavBar from "../Home/NavBar/NavBar";
 
 const Shop = () => {
     return (
-        <section>
+        <>
             <NavBar />
             <section className='routes-section'>
                 <article className='flex items-center justify-center font-thin md:text-lg'>
@@ -24,7 +24,7 @@ const Shop = () => {
             </section>
             <BrandsContainer />
             <Footer />
-        </section>
+        </>
     );
 };
 

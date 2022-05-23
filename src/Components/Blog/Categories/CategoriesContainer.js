@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import BrandsContainer from "../Home/Brands/BrandsContainer";
-import Footer from "../Home/Footer/Footer";
-import NavBar from "../Home/NavBar/NavBar";
+import BrandsContainer from "../../Home/Brands/BrandsContainer";
+import Footer from "../../Home/Footer/Footer";
+import NavBar from "../../Home/NavBar/NavBar";
+import Categories from "./Categories";
+import CategoriesBlog from "./CategoriesBlog";
 
-const Categories = () => {
+const CategoriesContainer = () => {
+    const [activeCategory, setActiveCategory] = useState(null);
     return (
         <>
             <NavBar />
@@ -25,27 +28,16 @@ const Categories = () => {
                     <Link to='/Blog/Category' className='routes__links'>
                         Category
                     </Link>
-                    {/* <span class='material-icons-outlined mx-2'>
-                        keyboard_arrow_right
-                    </span>
-                    <Link
-                        to='/Blog/Category/Uncategorized'
-                        className='routes__links'>
-                        Uncategorized
-                    </Link> */}
-                    {/* <span class='material-icons-outlined mx-2'>
-                        keyboard_arrow_right
-                    </span> */}
-                    {/* <p>{name}</p> */}
                 </article>
-                {/* <h2 className='text-3xl text-black font-extrabold text-center mt-4'>
-                    {name}
-                </h2> */}
             </section>
+            <main className='flex justify-center items-start'>
+                <CategoriesBlog activeCategory={activeCategory} />
+                <Categories setActiveCategory={setActiveCategory} />
+            </main>
             <BrandsContainer />
             <Footer />
         </>
     );
 };
 
-export default Categories;
+export default CategoriesContainer;

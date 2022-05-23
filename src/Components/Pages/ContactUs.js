@@ -7,7 +7,7 @@ import NavBar from "../Home/NavBar/NavBar";
 
 const ContactUs = () => {
     return (
-        <section>
+        <>
             <NavBar />
             <section className='routes-section'>
                 <article className='flex items-center justify-center font-thin md:text-lg'>
@@ -26,7 +26,7 @@ const ContactUs = () => {
             <ContactSection />
             <BrandsContainer />
             <Footer />
-        </section>
+        </>
     );
 };
 

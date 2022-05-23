@@ -15,7 +15,7 @@ const ContactSection = () => {
     };
 
     return (
-        <section className='flex flex-wrap justify-center items-center md:px-10 px-2 py-32'>
+        <main className='flex flex-wrap justify-center items-center md:px-10 px-2 py-32'>
             <article className='md:w-2/5 w-full md:mb-0 mb-10'>
                 <p
                     className='capitalize font-semibold'
@@ -76,7 +76,7 @@ const ContactSection = () => {
                     <img src={MapsImg} alt='Google Maps' style={stylesImg} />
                 </figure>
             </article>
-        </section>
+        </main>
     );
 };
 

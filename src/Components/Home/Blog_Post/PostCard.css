@@ -1,13 +1,14 @@
 .postList {
     margin: 0 4%;
 }
+
 .postCard,
 .postCard img {
     transition: all 0.2s ease-in;
 }
 
 .postCard img {
-    max-height: 280px;
+    height: 300px;
     width: 100%;
 }
 
@@ -22,7 +23,8 @@
 
 @media screen and (min-width: 1024px) {
     .postCard img {
-        height: 220px;
+        /* height: 220px; */
+        max-height: 540px;
         width: 100%;
     }
 }

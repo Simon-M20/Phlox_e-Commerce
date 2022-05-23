@@ -13,7 +13,7 @@ const WhoWeAre = () => {
     };
 
     return (
-        <section className='flex flex-wrap md:justify-between justify-center items-center w-full md:px-10 px-4 py-32'>
+        <main className='flex flex-wrap md:justify-between justify-center items-center w-full md:px-10 px-4 py-32'>
             <article className='md:w-2/5 w-full md:text-base text-sm'>
                 <p
                     className='capitalize font-semibold'
@@ -52,7 +52,7 @@ const WhoWeAre = () => {
                     <img src={AboutUsImg} alt='About Us' />
                 </figure>
             </article>
-        </section>
+        </main>
     );
 };
 

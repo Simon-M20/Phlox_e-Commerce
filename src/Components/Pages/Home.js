@@ -10,7 +10,7 @@ import ProductList from "../Home/Popular_Products/ProductList";
 
 const Home = () => {
     return (
-        <section>
+        <>
             <NavBar />
             <Hero />
             <MainProducts />
@@ -20,7 +20,7 @@ const Home = () => {
             <PostList />
             <BrandsContainer />
             <Footer />
-        </section>
+        </>
     );
 };
 
